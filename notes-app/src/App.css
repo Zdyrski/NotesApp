@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 80px;
+  font-size: 20px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 25px;
+  color: #444444;
+  padding: 10px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* MAIN PAGE */ 
+
+.note-add {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+textarea {
+	box-sizing: border-box;
+	border: black;
+	border-radius: 3px;
+	resize: none;
+	font-size: 20px;
+	line-height: 24px;
+	overflow: auto;
+	height: 150px;
+  display: block;
+  width: 100%;
+	padding: 8px;
+  margin: 12px;
+	box-shadow: 0px 4px 10px -8px black;
+}
+
+.note {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background: #E7E9EB;
+	border-radius: 3px;
+  margin: 5px;
+  height: 100px;
+  width: 60%;
+  padding: 5px;
+}
+
+.note-text-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+}
+
+.note-text {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+    -webkit-line-clamp: 3 ;
+    -webkit-box-orient: vertical;  
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+
+.date-link {
+  width: 110px;
+  cursor: pointer;
+}
+.date-link:hover,
+.date-link:focus {
+  background-color: #F082AC;
+  border-radius: 3px;
+}
+
+ /* NOTE PAGE */ 
+
+.note-page {
+  width: 60%;
+}
+
+.note-page-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background: #E7E9EB;
+  margin-top: 10px;
+	border-radius: 3px;
+  height: auto;
+  min-height: 100px;
+  width: 100%;
+  padding: 15px;
+}
+
+.note-page-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-page-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note-page-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BUTTONS */
+
+.button-add {
+  background-color: white;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: solid black 1px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-add:hover,
+.button-add:focus {
+  background-color: #f5f7f8;
+}
+
+.button-delete {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-delete:hover,
+.button-delete:focus {
+  background-color: #F082AC;
+}
